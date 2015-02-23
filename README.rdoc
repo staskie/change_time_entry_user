@@ -1,3 +1,8 @@
-= change_time_logger
+= Change Time Entry User
 
-Description goes here
+This Redmine plugin allows to log spent time as a different user.
+
+Just it.
+
+Tested with Redmine 2.6
+
