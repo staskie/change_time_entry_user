@@ -1,0 +1,6 @@
+<% issue_assignee = (time_entry.issue.assigned_to.present? ? time_entry.issue.assigned_to.id : nil) %>
+
+<p>
+  <label for="time_entry_user_id"><%= l(:field_user) %><span class="required"> *</span></label>
+  <%= select_tag('time_entry[unprotected_user_id]', options_from_collection_for_select(time_entry.issue.assignable_users, 'id', 'name', issue_assignee)) %>
+</p>
