@@ -1,7 +1,7 @@
 require 'redmine'
 
 Redmine::Plugin.register :change_time_entry_user do
-  name 'Change Time Logger plugin'
+  name 'Change Time Entry User plugin'
   author 'Dominik Staskiewicz'
   description 'Log time as a different person'
   version '0.0.1'
