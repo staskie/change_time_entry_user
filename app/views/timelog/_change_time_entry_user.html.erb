@@ -1,5 +1,5 @@
 <% if User.current.allowed_to?(:change_time_entry_user, @project) %>
-  <% issue_assignee = (time_entry.issue.assigned_to.present? ? time_entry.issue.assigned_to.id : nil) %>
+  <% issue_assignee = ChangeTimeEntryUser::AssignedUser.call(time_entry) %>
 
   <p>
     <label for="time_entry_user_id"><%= l(:field_user) %><span class="required"> *</span></label>

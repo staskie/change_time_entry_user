@@ -18,6 +18,7 @@ end
 
 require_relative 'lib/change_time_entry_user/time_entry_patch'
 require_relative 'lib/change_time_entry_user/hooks'
+require_relative 'lib/change_time_entry_user/assigned_user'
 
 Rails.configuration.to_prepare do
   TimeEntry.send(:include, ChangeTimeEntryUser::TimeEntryPatch)
